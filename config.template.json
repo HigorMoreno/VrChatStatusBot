@@ -1,0 +1,9 @@
+{
+	"clientId": "BotID",
+	"guildId": "ServerID",
+	"token": "bottoken",
+    "user":{
+        "username": "vrchat user",
+        "password": "vrchat pass"
+    }
+}
