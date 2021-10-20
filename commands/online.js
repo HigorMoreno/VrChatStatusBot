@@ -16,7 +16,7 @@ module.exports = {
 				var result = `Usuários Online: ${resp.data.length}\n`;
 				resp.data.forEach(x=> result += `${x.displayName}\n`)
 				
-				await interaction.reply(result)
+				await interaction.reply(result);
 			});
 		});
 	},
