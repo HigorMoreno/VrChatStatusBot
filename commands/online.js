@@ -13,7 +13,7 @@ module.exports = {
 	async execute(interaction) {
 		AuthenticationApi.getCurrentUser().then(resp => {
 			FriendsApi.getFriends().then(async resp =>{
-				var result = `Usuários Online: ${resp.data.length}\n`;
+				var result = `Online Users: ${resp.data.length}\n`;
 				resp.data.forEach(x=> result += `${x.displayName}\n`)
 				
 				await interaction.reply(result);
